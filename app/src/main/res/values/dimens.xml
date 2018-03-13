@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Round scores-->
+    <dimen name="round_scores_layout_margin_top">40dp</dimen>
+    <dimen name="round_score_size">120dp</dimen>
+    <dimen name="round_score_font_size">45sp</dimen>
+    <dimen name="round_score_team_name_font_size">14sp</dimen>
+    <!--Round Scores Separator-->
+    <dimen name="view_width">50dp</dimen>
+    <dimen name="view_height">1dp</dimen>
+    <dimen name="view_margin">20dp</dimen>
+    <!--Score Buttons-->
+    <dimen name="score_btn_width">0dp</dimen>
+    <dimen name="score_btn_margin_top">40dp</dimen>
+    <dimen name="score_btn_font_size">12sp</dimen>
+    <dimen name="score_btn_margin_bottom">20dp</dimen>
+    <dimen name="score_btn_margin_left">8dp</dimen>
+    <dimen name="score_btn_margin_right">8dp</dimen>
+    <!--Reset Button-->
+    <dimen name="reset_btn_margin_bottom">20dp</dimen>
+</resources>
