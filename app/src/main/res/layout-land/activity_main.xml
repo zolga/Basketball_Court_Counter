@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainLayout"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--Round Scores Layout -->
+    <LinearLayout
+        android:id="@+id/round_scores"
+        style="@style/RoundsScoreTop.Land">
+
+        <LinearLayout style="@style/LinearLayoutWrapper">
+
+            <Button
+                android:id="@+id/team_a"
+                style="@style/ButtonRoundScoreRed"
+                android:text="@string/zero" />
+
+            <TextView
+                style="@style/TextViewTeamName"
+                android:text="@string/teamRed" />
+        </LinearLayout>
+
+        <View style="@style/ViewSeparatorLine.Land" />
+
+        <LinearLayout style="@style/LinearLayoutWrapper">
+
+            <Button
+                android:id="@+id/team_b"
+                style="@style/ButtonRoundScoreGreen"
+                android:text="@string/zero" />
+
+            <TextView
+                style="@style/TextViewTeamName"
+                android:text="@string/teamGreen" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--Buttons Layout -->
+    <ScrollView
+        android:id="@+id/scroll_buttons_wrapper"
+        style="@style/ScrollViewButtonsLand">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/score_buttons"
+                style="@style/ScoreButtonsLand">
+                <!--Team Red/Team A -->
+                <LinearLayout style="@style/ButtonsColumnWrapper">
+
+                    <Button
+                        style="@style/ScoreButtonRed"
+                        android:onClick="addThreePointsTeamA"
+                        android:text="@string/three_points" />
+
+                    <Button
+                        style="@style/ScoreButtonRed"
+                        android:onClick="addTwoPointsTeamA"
+                        android:text="@string/two_points" />
+
+                    <Button
+                        style="@style/ScoreButtonRed"
+                        android:onClick="addOnePointsTeamA"
+                        android:text="@string/one_point" />
+                </LinearLayout>
+                <!--Team Green/Team B -->
+                <LinearLayout style="@style/ButtonsColumnWrapper">
+
+                    <Button
+                        style="@style/ScoreButtonGreen"
+                        android:onClick="addThreePointsTeamB"
+                        android:text="@string/three_points" />
+
+                    <Button
+                        style="@style/ScoreButtonGreen"
+                        android:onClick="addTwoPointsTeamB"
+                        android:text="@string/two_points" />
+
+                    <Button
+                        style="@style/ScoreButtonGreen"
+                        android:onClick="addOnePointsTeamB"
+                        android:text="@string/one_point" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Reset Button -->
+            <Button
+                style="@style/ResetButtonLand"
+                android:onClick="resetScore"
+                android:text="@string/reset" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
